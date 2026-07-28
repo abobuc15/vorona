@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 
 import net.smertnik.vorona.Item.ModItems;
+import net.smertnik.vorona.block.ModBlocks;
 import net.smertnik.vorona.creativemodetab.ModCreativeModeTabs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,7 @@ public class Vorona implements ModInitializer {
 	public void onInitialize() {
 		ModCreativeModeTabs.regiserModCreativeModeTabs();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 }
